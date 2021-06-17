@@ -2,7 +2,8 @@
     <div class="navi-wrapper">
         <div class="navi"
         v-for="(item, index) in naviList"
-        :key="index">
+        :key="index"
+        @click="handleNavigation(item.destination)">
             <span class="navi__name">{{item.name}}</span>
             <span class="iconfont">&#xe692;</span>
         </div>
@@ -10,15 +11,20 @@
 </template>
 
 <script>
+import { useRouter } from 'vue-router'
 export default {
   name: 'Navi',
   setup () {
     const naviList = [
-          { name: 'My Footprint', destination: 'HOME' },
-          { name: 'My Wallet', destination: 'REC' },
-          { name: 'About Spotting', destination: 'REPORT' }
+          { name: 'My Footprint', destination: '' },
+          { name: 'My Wallet', destination: 'Wallet' },
+          { name: 'About Spotting', destination: 'AboutUs' }
       ]
-    return { naviList }
+    const router = useRouter()
+    const handleNavigation = (destination) => {
+        router.push({ name: destination })
+    }
+    return { naviList, handleNavigation }
   }
 }
 </script>

@@ -4,16 +4,15 @@
             <span class="iconfont">&#xe6bb;</span>
         </div>
         <div class="user__info">
-            <span class="user__info__text">Your Balance</span>
+            <span class="user__info__text">Available Items</span>
             <div class="user__info__points">
-                <span class="user__info__points__text">Points :</span>
-                <span class="user__info__points__number">11</span>
-                <span class="iconfont">&#xefd7;</span>
+                <span class="user__info__points__text">Amount :</span>
+                <span class="user__info__points__number">1</span>
             </div>
         </div>
-        <router-link :to='{name:"Wallet"}'>
+        <router-link :to='{name:"MALL"}'>
             <div class="user__btn">
-                <button>My Wallet</button>
+                <button>Go To Mall</button>
             </div>
         </router-link>
     </div>
@@ -48,13 +47,13 @@ export default {
         &__info {
             float: left;
             height: 100%;
-            width: 35%;
+            width: 38%;
             &__text {
                 display: inline-block;
                 padding-top: 15%;
                 width: 100%;
                 height: 35%;
-                font-size: .17rem;
+                font-size: .16rem;
                 color: $content-themeViceColor;
                 font-weight: bold;
             }
@@ -71,9 +70,6 @@ export default {
                     display: inline-block;
                     font-size: .16rem;
                     margin-right: 5%;
-                }
-                .iconfont {
-                    font-size: .17rem;
                 }
             }
         }

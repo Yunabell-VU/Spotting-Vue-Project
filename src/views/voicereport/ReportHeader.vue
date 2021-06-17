@@ -1,14 +1,14 @@
 <template>
   <div class="headerWrapper">
     <div class="header">
-      <div class="header__logo">Mall</div>
+      <div class="header__logo">Upload</div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'MallHeader'
+  name: 'ReportHeader'
 }
 </script>
 

@@ -18,7 +18,6 @@ export default {
         height: 56%;
         width: 92%;
         border: 2px solid $content-themeColor;
-        background-color:rgb(83, 191, 241);
     }
     .submit {
         position: absolute;

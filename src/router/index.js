@@ -30,6 +30,26 @@ const routes = [
     path: '/report',
     name: 'REPORT',
     component: Report
+  }, {
+    path: '/report/full',
+    name: 'ReportFull',
+    component: () => import('../views/fullreport/FullReport.vue')
+  }, {
+    path: '/report/voicel',
+    name: 'ReportVoice',
+    component: () => import('../views/voicereport/VoiceReport.vue')
+  }, {
+    path: '/my/wallet',
+    name: 'Wallet',
+    component: () => import('../views/wallet/Wallet.vue')
+  }, {
+    path: '/contact',
+    name: 'Contact',
+    component: () => import('../views/my/contact/Contact')
+  }, {
+    path: '/about',
+    name: 'AboutUs',
+    component: () => import('../views/my/about/AboutUs')
   }
 ]
 

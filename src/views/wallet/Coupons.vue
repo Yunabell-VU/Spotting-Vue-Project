@@ -1,22 +1,19 @@
 <template>
     <div class="wrapper">
         <div class="banner">
-            <span>Coupons</span>
+            <span>Available Items</span>
         </div>
         <div class="coupon"
         v-for="(item, index) in couponList"
         :key="index">
             <div class="coupon__image"
             :style='{"background-image":"url("+item.image+")"}'>
-            <span class="coupon__image__notice">{{item.notice}}</span>
+            <!-- <span class="coupon__image__notice">{{item.notice}}</span> -->
             </div>
             <div class="coupon__info">{{item.text}}</div>
-            <div class="coupon__points">
-                <span class="iconfont">&#xefd7;</span>
-                <span class="coupon__points__text">{{item.points}} Points</span>
-            </div>
+            <div class="coupon__points"></div>
             <div class="coupon__btn">
-                <button class="coupon__btn__submit">Redeem</button>
+                <button class="coupon__btn__submit">USE</button>
             </div>
         </div>
     </div>
@@ -30,25 +27,8 @@ export default {
           {
             image: 'https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60c9ea5409770e6a13fe63c5/52809848a147b77309701725569cc01b/surf_kit.jpg',
             notice: 'Surf Kit 5% Off',
-            text: 'Surf Kit 5% off',
-            points: '10'
-          }, {
-            image: 'https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60c9ea5409770e6a13fe63c5/52809848a147b77309701725569cc01b/surf_kit.jpg',
-            notice: 'Surf Kit 10% Off',
-            text: 'Surf Kit 10% off',
-            points: '25'
-          }, {
-            image: 'https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60c9ea5409770e6a13fe63c5/d2073d9f3c5abd3833db191a3075ff0b/surf_lesson.jpg',
-            notice: 'Free Surf Lesson',
-            text: 'Free Surf Lesson',
-            points: '100'
-          }, {
-            image: 'https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60c9ea5409770e6a13fe63c5/d29c7c2ffb7fc64804da20c4ec15deef/drink.jpg',
-            notice: 'Drink 10% Off',
-            text: 'Bar Drink 10% Off',
-            points: '20'
+            text: 'Surf Kit 5% off'
           }]
-
         return { couponList }
   }
 }
@@ -89,38 +69,27 @@ export default {
             border: 1px solid #333;
             background-size: cover;
             @include flexLeftCenter;
-            &__notice{
-                position:absolute;
-                bottom: 0;
-                left: 0;
-                height: 20%;
-                width: 100%;
-                font-size: .16rem;
-                font-weight: bold;
-                color: #FFECF3;
-                background-color: $content-themeViceColor;
-            }
+            // &__notice{
+            //     position:absolute;
+            //     bottom: 0;
+            //     left: 0;
+            //     height: 20%;
+            //     width: 100%;
+            //     font-size: .16rem;
+            //     font-weight: bold;
+            //     color: #FFECF3;
+            //     background-color: $content-themeViceColor;
+            // }
         }
         &__info {
-            padding-top: 1%;
+            padding-top: 5%;
+            padding-bottom: 3%;
             width: 100%;
             height: 12%;
             color: black;
             font-weight: bold;
             font-size: .155rem;
-        }
-        &__points {
-            color: $content-themeViceColor;
-            margin-bottom: 1%;
-            @include flexLeftCenter;
-            font-size: .16rem;
-            .iconfont {
-                float: left;
-                margin-right: 3%;
-            }
-            &__text{
-                float: left;
-            }
+            text-align: center;
         }
         &__btn {
             width: 100%;

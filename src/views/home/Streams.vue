@@ -50,7 +50,7 @@ export default {
     }, {
       id: 3,
       color: 'color: #4bad4b',
-      name: 'Sponge Grandpa',
+      name: 'Superrr',
       distance: '1 km',
       tags: ['&#xe641;']
     }, {
