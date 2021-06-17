@@ -31,7 +31,7 @@ export default {
         position: absolute;
         top: 14%;
         left: 5%;
-        height: 13%;
+        height: 12%;
         width: 90%;
         border-bottom: 2px solid $content-themeViceColor;
         &__profile {
