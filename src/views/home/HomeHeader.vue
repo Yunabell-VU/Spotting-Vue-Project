@@ -3,16 +3,8 @@
     <div class="header">
       <div class="header__logo">SPOTTING</div>
       <div class="header__services">
-        <span class="header__services__flag">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-spanish"></use>
-          </svg>
-        </span>
-        <span class="header__services__flag">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-uk"></use>
-          </svg>
-        </span>
+        <div class="header__services__flag spain"></div>
+        <div class="header__services__flag uk"></div>
         <div class="header__services__contact">
           <div class="iconfont">&#xe605;</div>
         </div>
@@ -64,9 +56,15 @@ export default {
       float: left;
       width: 0.25rem;
       height: 0.25rem;
-      font-size: 0.25rem;
       margin-right: 0.1rem;
+      background-size: cover;
     }
+    .spain {
+        background-image: url(../../assets/spain.png);
+      }
+    .uk {
+        background-image: url(../../assets/uk.png);
+      }
     &__contact {
       float: right;
       width: 0.25rem;
