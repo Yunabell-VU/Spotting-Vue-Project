@@ -1,5 +1,7 @@
 <template>
-    <div class='wrapper'></div>
+    <div class='wrapper'>
+        <span class='frame-text'>DESCRIPTION</span>
+    </div>
 </template>
 
 <script>
@@ -19,5 +21,12 @@ export default {
         height:16%;
         width: 96%;
         border: 2px solid $content-themeColor;
+    }
+    .frame-text {
+        display: inline-block;
+        font-size: .16rem;
+        font-weight: bold;
+        color: $content-themeColor;
+        padding: 1% 0 5% 2%;
     }
 </style>

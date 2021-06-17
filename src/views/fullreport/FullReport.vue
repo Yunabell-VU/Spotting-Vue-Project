@@ -1,5 +1,5 @@
 <template>
-    <ReportHeader />
+    <Header />
     <PhotoFrame />
     <LocationFrame />
     <DescFrame />
@@ -8,14 +8,14 @@
 </template>
 
 <script>
-import ReportHeader from './ReportHeader'
+import Header from './Header'
 import Docker from './Docker'
 import PhotoFrame from './PhotoFrame'
 import LocationFrame from './LocationFrame'
 import DescFrame from './DescFrame'
 export default {
     name: 'FullReport',
-    components: { ReportHeader, PhotoFrame, LocationFrame, DescFrame, Docker }
+    components: { Header, PhotoFrame, LocationFrame, DescFrame, Docker }
 }
 </script>
 
