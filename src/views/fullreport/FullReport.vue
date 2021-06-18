@@ -1,14 +1,17 @@
 <template>
     <Header />
-    <PhotoFrame />
-    <LocationFrame />
-    <DescFrame />
-    <Docker />
-    <div class="submit">
-        <span class="submit__instruction">You can Save in Records and Upload later</span>
-        <button class="submit__save iconfont">&#xe614; SAVE</button>
-        <button class="submit__upload iconfont">&#xe61c; UPLOAD</button>
+    <div class="outer-wrapper">
+        <PhotoFrame />
+        <LocationFrame />
+        <DegreeFrame />
+        <DescFrame />
+        <div class="submit">
+            <button class="submit__save iconfont">&#xe614; SAVE</button>
+            <button class="submit__upload iconfont">&#xe61c; UPLOAD</button>
+            <span class="submit__instruction">You can Save in Records and Upload later</span>
+        </div>
     </div>
+    <Docker />
 </template>
 
 <script>
@@ -17,36 +20,40 @@ import Docker from './Docker'
 import PhotoFrame from './PhotoFrame'
 import LocationFrame from './LocationFrame'
 import DescFrame from './DescFrame'
+import DegreeFrame from './DegreeFrame'
 export default {
     name: 'FullReport',
-    components: { Header, PhotoFrame, LocationFrame, DescFrame, Docker }
+    components: { Header, PhotoFrame, LocationFrame, DescFrame, DegreeFrame, Docker }
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../../style/variables.scss";
 @import "../../style/mixins.scss";
-    .submit {
+    .outer-wrapper {
+        overflow-y: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         position: absolute;
-        top:80%;
-        left: 10%;
-        height:10%;
+        left: 0;
+        top: 12%;
+        width: 100%;
+        height: 120%;
+        background-color: $content-bgColor;
+    }
+    .submit {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 6%;
+        margin-bottom: .8rem;
+        height: 1.2rem;
         width: 80%;
-        &__instruction {
-            display: inline-block;
-            width: 100%;
-            height: 30%;
-            // padding-top: 2%;
-            margin-bottom: 2%;
-            color: $content-themeViceColor;
-            font-size: .13rem;
-            font-weight: bold;
-            text-align: center;
-        }
         button {
             box-sizing: border-box;
             width: 45%;
-            height: 60%;
+            height: .4rem;
             border: none;
             background-color: $content-themeColor;
             border-radius: .16rem;
@@ -54,8 +61,15 @@ export default {
             font-weight: bold;
             font-size: .18rem;
         }
-        &__upload {
-            float: right;
+        &__instruction {
+            display: inline-block;
+            margin-top: 3%;
+            width: 100%;
+            height: 30%;
+            color: $content-themeViceColor;
+            font-size: .13rem;
+            font-weight: bold;
+            text-align: center;
         }
     }
 </style>

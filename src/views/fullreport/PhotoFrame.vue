@@ -1,5 +1,5 @@
 <template>
-    <div class='wrapper'>
+    <div class='photo-wrapper'>
         <span class='frame-text'>CHOOSE PHOTOS TO UPLOAD</span>
         <div class="photos">
             <div class="photos__image"></div>
@@ -17,12 +17,12 @@ export default {
 <style lang='scss' scoped>
 @import "../../style/variables.scss";
 @import "../../style/mixins.scss";
-    .wrapper {
-        position: absolute;
+    .photo-wrapper {
+        display: flex;
+        flex-direction: column;
         box-sizing: border-box;
-        top: 13%;
-        left: 2%;
-        height:22%;
+        margin-top: 3%;
+        height: 1.6rem;
         width: 96%;
         border: 2px solid $content-themeColor;
     }
@@ -34,11 +34,11 @@ export default {
         padding: 1% 0 5% 2%;
     }
     .photos {
+        display: flex;
         margin-left: 5%;
         width: 90%;
-        height: 60%;
+        height: 1rem;
         &__image {
-            float: left;
             margin-right: 8%;
             height: .8rem;
             width: .8rem;

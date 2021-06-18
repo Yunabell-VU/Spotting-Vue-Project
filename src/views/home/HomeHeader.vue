@@ -7,7 +7,7 @@
         <div class="header__services__flag uk"></div>
         <router-link :to='{name:"Contact"}'>
           <div class="header__services__contact">
-            <div class="iconfont">&#xe637;</div>
+            <div class="iconfont">&#xe605;</div>
           </div>
         </router-link>
       </div>

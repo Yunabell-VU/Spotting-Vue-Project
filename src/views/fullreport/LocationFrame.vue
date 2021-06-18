@@ -1,14 +1,18 @@
 <template>
-    <div class='wrapper'>
-        <span class='frame-text'>YOUR LOCATION</span>
-        <div class="info">
-            <span>Click map to select location area or press location icon to fill in automatically</span>
+    <div class='loc-wrapper'>
+        <div class="loc-wrapper__left">
+            <span class='frame-text'>YOUR LOCATION</span>
+            <div class="info">
+                <span>Click map to select location area or press location icon to fill in automatically</span>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="LOCATION CODE">
+                <span class="iconfont input-box__icon">&#xe65f;</span>
+            </div>
         </div>
-        <div class="input-box">
-            <input type="text" placeholder="LOCATION CODE">
-            <span class="iconfont input-box__icon">&#xe65f;</span>
+        <div class="loc-wrapper__right">
+            <div class="map"></div>
         </div>
-        <div class="map"></div>
     </div>
 </template>
 
@@ -21,35 +25,45 @@ export default {
 <style lang='scss' scoped>
 @import "../../style/variables.scss";
 @import "../../style/mixins.scss";
-    .wrapper {
-        position: absolute;
+    .loc-wrapper {
+        display: flex;
+        margin-top: 5%;
         box-sizing: border-box;
-        top: 37%;
-        left: 2%;
-        height:25%;
+        height: 1.8rem;
         width: 96%;
         border: 2px solid $content-themeColor;
+        &__left {
+            display: flex;
+            flex-direction: column;
+            height:100%;
+            flex: 60%;
+        }
+        &__right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height:100%;
+            flex: 40%;
+        }
     }
     .frame-text {
         display: inline-block;
         font-size: .16rem;
         font-weight: bold;
         color: $content-themeColor;
-        padding: 1% 0 5% 2%;
+        padding: 1% 0 5% 3.5%;
     }
     .info {
-        position: absolute;
-        top:25%;
-        left:4%;
-        width: 55%;
+        margin-left: 5%;
+        margin-top: 3%;
+        width: 95%;
         height: 35%;
         font-size: .14rem;
         color: $content-themeViceColor;
     }
     .input-box {
-        position:absolute;
-        top:70%;
-        left:4%;
+        margin-left: 7%;
+        margin-top: 6%;
         width: 55%;
         height: 25%;
         @include flexLeftCenter;
@@ -66,11 +80,8 @@ export default {
         }
     }
     .map {
-        position:absolute;
-        right:2%;
-        top: 5%;
-        width: 35%;
-        height: 90%;
+        width: 90%;
+        height: 92%;
         background-color: cadetblue;
     }
 </style>
