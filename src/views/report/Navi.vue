@@ -13,8 +13,9 @@
         <div class="help">
             <div class="help__box">
                 <span class="iconfont">&#xe62e;</span>
+                <!-- <span class="iconfont">&#xe621;</span> -->
             </div>
-            <span class="help__text">Help</span>
+            <!-- <span class="help__text">Help</span> -->
         </div>
     </div>
 </template>
@@ -98,19 +99,19 @@ export default {
             box-sizing: border-box;
             height: .6rem;
             width: .6rem;
-            border: 1px solid #333;
-            background-color: $content-themeColor;
+            // border: 1px solid #333;
+            // background-color: $content-themeColor;
             @include flexCenter;
             .iconfont {
-                font-size: .5rem;
+                font-size: .4rem;
             }
         }
-        &__text {
-            display: inline-block;
-            width: 100%;
-            height: .2rem;
-            font-size: .15rem;
-            text-align: center;
-        }
+        // &__text {
+        //     display: inline-block;
+        //     width: 100%;
+        //     height: .2rem;
+        //     font-size: .15rem;
+        //     text-align: center;
+        // }
     }
 </style>

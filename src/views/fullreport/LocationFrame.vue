@@ -2,7 +2,7 @@
     <div class='wrapper'>
         <span class='frame-text'>YOUR LOCATION</span>
         <div class="info">
-            <span>Press map to select location area or press location icon to fill in automatically</span>
+            <span>Click map to select location area or press location icon to fill in automatically</span>
         </div>
         <div class="input-box">
             <input type="text" placeholder="LOCATION CODE">

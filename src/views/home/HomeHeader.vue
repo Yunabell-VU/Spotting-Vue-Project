@@ -74,7 +74,8 @@ export default {
       .iconfont {
         font-size: 0.25rem;
         font-weight: bold;
-        color: $content-themeViceColor;
+        // color: $content-themeViceColor;
+        color: white;
       }
     }
   }
