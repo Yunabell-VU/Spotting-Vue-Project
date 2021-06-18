@@ -15,7 +15,7 @@
                 <span class="iconfont">&#xe62e;</span>
                 <!-- <span class="iconfont">&#xe621;</span> -->
             </div>
-            <!-- <span class="help__text">Help</span> -->
+            <span class="help__text">Help</span>
         </div>
     </div>
 </template>
@@ -61,57 +61,56 @@ export default {
     }
     .navis {
         position: absolute;
-        top: 26%;
+        top: 25%;
         left: 0;
         height: 45%;
         width: 100%;
     }
     .navi {
-        height: 26%;
-        width: 100%;
-        margin-top:2%;
-        margin-bottom: 10%;
+        height: 35%;
+        width: 92%;
+        margin: 4% 3% 15% 4%;
         background-color: $content-themeColor;
         box-shadow: 0.01rem 0.02rem 0.1rem 0.01rem rgba(0, 0, 0, 0.2);
         @include flexLeftCenter;
+        color: white;
         &__icon {
             margin: 0 5% 0 4%;
             font-size: .5rem;
-            color: #000;
         }
         &__text {
-            font-size: .2rem;
+            font-size: .23rem;
+            font-weight: bold;
         }
         &__arrow {
             position: absolute;
             right:4%;
             font-size: .5rem;
-            color: white;
         }
     }
     .help {
         position: absolute;
-        bottom: 10%;
+        bottom: 8%;
         right:3%;
         height: .8rem;
-        width: .6rem;
+        width: .5rem;
         &__box {
             box-sizing: border-box;
-            height: .6rem;
-            width: .6rem;
-            // border: 1px solid #333;
+            height: .5rem;
+            width: .5rem;
             // background-color: $content-themeColor;
             @include flexCenter;
             .iconfont {
                 font-size: .4rem;
+                color:$content-themeViceColor;
             }
         }
-        // &__text {
-        //     display: inline-block;
-        //     width: 100%;
-        //     height: .2rem;
-        //     font-size: .15rem;
-        //     text-align: center;
-        // }
+        &__text {
+            display: inline-block;
+            width: 100%;
+            height: .2rem;
+            font-size: .15rem;
+            text-align: center;
+        }
     }
 </style>
