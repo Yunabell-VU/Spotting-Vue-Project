@@ -1,6 +1,6 @@
 <template>
 <div class="submit">
-    <router-link :to='{name:"REC"}'>
+    <router-link :to='{name:"HISTORY"}'>
         <button class="iconfont">&#xe63a; History</button>
     </router-link>
 </div>

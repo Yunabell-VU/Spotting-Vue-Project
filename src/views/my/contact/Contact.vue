@@ -1,21 +1,24 @@
 <template>
-    <Header />
+    <Header content="Contact" />
     <div class="content"></div>
     <router-link :to='{name:"AboutUs"}'>
       <div class="btn">
         <button>About us</button>
       </div>
     </router-link>
-    <Docker />
+    <Docker :content="idx"/>
 </template>
 
 <script>
-import Header from './Header'
-import Docker from './Docker'
+import Header from '../../../components/Header.vue'
+import Docker from '../../../components/Docker.vue'
 
 export default {
   name: 'Contact',
-  components: { Header, Docker }
+  components: { Header, Docker },
+  data () {
+        return { idx: 4 }
+    }
 }
 </script>
 

@@ -1,22 +1,22 @@
 <template>
-    <Header content="My Wallet"/>
-    <UserInfo />
-    <Coupons />
+    <Header content = "History"/>
+    <Navi />
+    <RecStreams />
     <Docker :content="idx"/>
 </template>
 
 <script>
 import Header from '../../components/Header.vue'
-import UserInfo from './UserInfo'
-import Coupons from './Coupons'
+import Navi from './Navi'
+import RecStreams from './RecStreams'
 import Docker from '../../components/Docker.vue'
 
 export default {
-  name: 'Mall',
-  components: { Header, UserInfo, Coupons, Docker },
+  name: 'History',
+  components: { Header, Navi, RecStreams, Docker },
   data () {
-        return { idx: 4 }
-    }
+        return { idx: 1 }
+  }
 }
 </script>
 

@@ -1,17 +1,20 @@
 <template>
-    <Header />
+    <Header content="Saved"/>
     <Content />
-    <Docker />
+    <Docker :content="idx"/>
 </template>
 
 <script>
-import Header from './Header'
+import Header from '../../../components/Header.vue'
 import Content from './Content'
-import Docker from './Docker'
+import Docker from '../../../components/Docker.vue'
 
 export default {
   name: 'SavedRep',
-  components: { Header, Content, Docker }
+  components: { Header, Content, Docker },
+  data () {
+        return { idx: 1 }
+    }
 }
 </script>
 

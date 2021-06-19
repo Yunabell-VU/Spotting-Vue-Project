@@ -1,5 +1,5 @@
 <template>
-    <Header />
+    <Header content="Upload" />
     <div class="outer-wrapper">
         <PhotoFrame />
         <LocationFrame />
@@ -15,13 +15,13 @@
             <span class="submit__instruction">You can SAVE in "History" and UPLOAD later</span>
         </div>
     </div>
-    <Docker />
+    <Docker :content="idx"/>
 </template>
 
 <script>
 import { useRouter } from 'vue-router'
-import Header from './Header'
-import Docker from './Docker'
+import Header from '../../components/Header.vue'
+import Docker from '../../components/Docker.vue'
 import PhotoFrame from './PhotoFrame'
 import LocationFrame from './LocationFrame'
 import DescFrame from './DescFrame'
@@ -35,6 +35,9 @@ export default {
           router.push({ name: text })
         }
         return { handleNavigation }
+    },
+    data () {
+        return { idx: 2 }
     }
 }
 </script>

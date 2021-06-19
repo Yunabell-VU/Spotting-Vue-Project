@@ -1,7 +1,7 @@
 <template>
-    <ReportHeader />
+    <Header content="Upload"/>
     <InputFrame />
-    <Docker />
+    <Docker :content="idx"/>
     <div class="submit">
         <span class="submit__instruction">You can SAVE in "History" and UPLOAD later</span>
         <button class="submit__save iconfont">&#xe614; SAVE</button>
@@ -10,13 +10,16 @@
 </template>
 
 <script>
-import ReportHeader from './ReportHeader'
-import Docker from './Docker'
+import Header from '../../components/Header.vue'
+import Docker from '../../components/Docker.vue'
 import InputFrame from './InputFrame'
 
 export default {
     name: 'VoiceReport',
-    components: { ReportHeader, InputFrame, Docker }
+    components: { Header, InputFrame, Docker },
+    data () {
+        return { idx: 2 }
+    }
 }
 </script>
 
