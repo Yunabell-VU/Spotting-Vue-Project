@@ -2,7 +2,10 @@
     <div class="user-wrapper">
         <div class="basic-info">
             <div class="basic-info__profile">
-                <span class="iconfont">&#xe6bb;</span>
+                <!-- <span class="iconfont">&#xe6bb;</span> -->
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-touxiang2"></use>
+                </svg>
             </div>
             <span class="basic-info__username">Superrr</span>
             <span class="iconfont basic-info__edit">&#xe608;</span>
@@ -48,9 +51,8 @@ export default {
             width: 30%;
             height: 100%;
             @include flexCenter;
-            .iconfont{
-                font-size: 1rem;
-                color: $content-themeColor;
+            .icon{
+                font-size: .8rem;
             }
         }
         &__username {
