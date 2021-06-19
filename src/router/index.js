@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/home/Home'
 import My from '../views/my/My'
 import Mall from '../views/mall/Mall'
-import Rec from '../views/records/Rec'
+import History from '../views/history/History'
 import Report from '../views/report/Report'
 
 const routes = [
@@ -23,9 +23,9 @@ const routes = [
     name: 'MALL',
     component: Mall
   }, {
-    path: '/rec',
-    name: 'REC',
-    component: Rec
+    path: '/history',
+    name: 'HISTORY',
+    component: History
   }, {
     path: '/report',
     name: 'REPORT',
@@ -50,6 +50,14 @@ const routes = [
     path: '/about',
     name: 'AboutUs',
     component: () => import('../views/my/about/AboutUs')
+  }, {
+    path: '/report/uploaded/sample1',
+    name: 'UploadFullRep',
+    component: () => import('../views/upload/uploadreport/UploadFullRep')
+  }, {
+    path: '/report/saved/sample1',
+    name: 'SavedRep',
+    component: () => import('../views/upload/savereport/SavedRep')
   }
 ]
 

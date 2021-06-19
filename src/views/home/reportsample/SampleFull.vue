@@ -1,17 +1,20 @@
 <template>
-    <ReportHeader />
+    <Header content="Reports"/>
     <Content />
-    <Docker />
+    <Docker :content="idx"/>
 </template>
 
 <script>
-import ReportHeader from './ReportHeader'
+import Header from '../../../components/Header.vue'
 import Content from './Content'
-import Docker from './Docker'
+import Docker from '../../../components/Docker.vue'
 
 export default {
   name: 'SampleFull',
-  components: { ReportHeader, Content, Docker }
+  components: { Header, Content, Docker },
+  data () {
+        return { idx: 0 }
+    }
 }
 </script>
 

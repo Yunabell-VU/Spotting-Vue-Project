@@ -1,5 +1,5 @@
 <template>
-    <div class='wrapper'>
+    <div class='desc-wrapper'>
         <span class='frame-text'>DESCRIPTION</span>
         <div class="input-area">
             <div class="input-area__text">
@@ -23,12 +23,12 @@ export default {
 <style lang='scss' scoped>
 @import "../../style/variables.scss";
 @import "../../style/mixins.scss";
-    .wrapper {
-        position: absolute;
+    .desc-wrapper {
+        display: flex;
+        margin-top: 5%;
+        flex-direction: column;
         box-sizing: border-box;
-        top: 63%;
-        left: 2%;
-        height:16%;
+        height: 1.6rem;
         width: 96%;
         border: 2px solid $content-themeColor;
     }
@@ -41,17 +41,19 @@ export default {
         padding: 1% 0 2% 2%;
     }
     .input-area {
+        display:flex;
+        flex-direction: column;
         margin-left: 5%;
+        margin-top: 3%;
         width: 90%;
-        height: 65%;
+        height: 1.5rem;
         &__text {
             width: 100%;
-            height: 55%;
-            background-color: burlywood;
+            height: .6rem;
             input {
                 box-sizing: border-box;
                 width: 100%;
-                height: 100%;
+                height: .6rem;
                 border: 2px solid $content-themeColor;
                 padding-left: 2%;
                 font-size: .13rem;
@@ -60,7 +62,7 @@ export default {
         &__voice {
             margin-top: 1.5%;
             width: 100%;
-            height: 42%;
+            height: .6rem;
             @include flexLeftCenter;
             color: $content-themeColor;
             &__mac {

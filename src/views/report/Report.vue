@@ -1,17 +1,20 @@
 <template>
-    <ReportHeader />
+    <Header content="Report"/>
     <Navi />
-    <Docker />
+    <Docker :content="idx"/>
 </template>
 
 <script>
-import ReportHeader from './ReportHeader'
+import Header from '../../components/Header.vue'
 import Navi from './Navi'
-import Docker from './Docker'
+import Docker from '../../components/Docker.vue'
 
 export default {
   name: 'Report',
-  components: { ReportHeader, Navi, Docker }
+  components: { Header, Navi, Docker },
+  data () {
+        return { idx: 2 }
+    }
 }
 </script>
 

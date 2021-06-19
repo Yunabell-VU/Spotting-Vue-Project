@@ -1,24 +1,22 @@
 <template>
-    <WalletHeader />
+    <Header content="My Wallet"/>
     <UserInfo />
     <Coupons />
-    <Docker />
+    <Docker :content="idx"/>
 </template>
 
 <script>
-import WalletHeader from './WalletHeader'
+import Header from '../../components/Header.vue'
 import UserInfo from './UserInfo'
 import Coupons from './Coupons'
-import Docker from './Docker'
+import Docker from '../../components/Docker.vue'
 
 export default {
   name: 'Mall',
-  components: { WalletHeader, UserInfo, Coupons, Docker },
+  components: { Header, UserInfo, Coupons, Docker },
   data () {
-    return {
-      logaName: 'Points'
+        return { idx: 4 }
     }
-  }
 }
 </script>
 

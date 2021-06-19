@@ -1,16 +1,19 @@
 <template>
-    <Header />
+    <Header content="About Us"/>
     <div class="content"></div>
-    <Docker />
+    <Docker :content="idx"/>
 </template>
 
 <script>
-import Header from './Header'
-import Docker from './Docker'
+import Header from '../../../components/Header.vue'
+import Docker from '../../../components/Docker.vue'
 
 export default {
   name: 'AboutUs',
-  components: { Header, Docker }
+  components: { Header, Docker },
+  data () {
+        return { idx: 4 }
+    }
 }
 </script>
 
