@@ -13,7 +13,9 @@
             </div>
             <div class="points-info__right">
                 <span class="points-info__right__number">11</span>
-                <span class= "iconfont">&#xefd7;</span>
+                <router-link :to='{name: "MALL"}'>
+                    <span class= "iconfont points-info__right__fish">&#xefd7;</span>
+                </router-link>
             </div>
         </div>
     </div>
@@ -88,8 +90,9 @@ export default {
                 font-size: .3rem;
                 margin-right: 15%;
             }
-            .iconfont{
+            &__fish{
                 font-size: .3rem;
+                color: $content-themeViceColor;
             }
         }
     }

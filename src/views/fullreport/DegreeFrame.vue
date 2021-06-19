@@ -1,11 +1,18 @@
 <template>
     <div class='degree-wrapper'>
-        <span class='frame-text'>SCALE OF CONTAMINATION</span>
+        <span class='frame-text'>SCALE OF POLLUTION</span>
         <div class="input-area">
             <span class="iconfont input-area__level"
                 v-for="(item, index) in 5"
                 :key="index"
-            >&#xe61f;</span>
+            >
+            <!-- &#xe61f; -->
+            <!-- &#xe61b; -->
+            <!-- &#xe6a1; -->
+            &#xe714;
+            <!-- &#xe62d; -->
+            <!-- &#xe62c; -->
+            </span>
         </div>
     </div>
 </template>

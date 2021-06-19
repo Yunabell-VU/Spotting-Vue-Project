@@ -50,6 +50,14 @@ const routes = [
     path: '/about',
     name: 'AboutUs',
     component: () => import('../views/my/about/AboutUs')
+  }, {
+    path: '/report/uploaded/sample1',
+    name: 'UploadFullRep',
+    component: () => import('../views/upload/uploadreport/UploadFullRep')
+  }, {
+    path: '/report/saved/sample1',
+    name: 'SavedRep',
+    component: () => import('../views/upload/savereport/SavedRep')
   }
 ]
 

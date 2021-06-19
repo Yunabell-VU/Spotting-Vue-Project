@@ -29,7 +29,7 @@ export default {
         display: flex;
         margin-top: 5%;
         box-sizing: border-box;
-        height: 1.8rem;
+        height: 2rem;
         width: 96%;
         border: 2px solid $content-themeColor;
         &__left {
@@ -82,6 +82,7 @@ export default {
     .map {
         width: 90%;
         height: 92%;
-        background-color: cadetblue;
+        background-image: url('https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60cc834215a71802de298567/f82d3ab36b76496afa4480429bb5b4d2/FULL_map.png');
+        background-size: cover;
     }
 </style>

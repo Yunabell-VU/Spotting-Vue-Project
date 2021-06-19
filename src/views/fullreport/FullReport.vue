@@ -6,15 +6,20 @@
         <DegreeFrame />
         <DescFrame />
         <div class="submit">
-            <button class="submit__save iconfont">&#xe614; SAVE</button>
-            <button class="submit__upload iconfont">&#xe61c; UPLOAD</button>
-            <span class="submit__instruction">You can Save in Records and Upload later</span>
+            <button class="submit__save iconfont"
+            @click="handleNavigation('SavedRep')"
+            >&#xe614; SAVE</button>
+            <button class="submit__upload iconfont"
+            @click="handleNavigation('UploadFullRep')"
+            >&#xe61c; UPLOAD</button>
+            <span class="submit__instruction">You can SAVE in "History" and UPLOAD later</span>
         </div>
     </div>
     <Docker />
 </template>
 
 <script>
+import { useRouter } from 'vue-router'
 import Header from './Header'
 import Docker from './Docker'
 import PhotoFrame from './PhotoFrame'
@@ -23,7 +28,14 @@ import DescFrame from './DescFrame'
 import DegreeFrame from './DegreeFrame'
 export default {
     name: 'FullReport',
-    components: { Header, PhotoFrame, LocationFrame, DescFrame, DegreeFrame, Docker }
+    components: { Header, PhotoFrame, LocationFrame, DescFrame, DegreeFrame, Docker },
+    setup () {
+        const router = useRouter()
+        const handleNavigation = (text) => {
+          router.push({ name: text })
+        }
+        return { handleNavigation }
+    }
 }
 </script>
 

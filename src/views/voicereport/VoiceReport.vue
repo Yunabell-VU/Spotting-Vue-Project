@@ -3,7 +3,7 @@
     <InputFrame />
     <Docker />
     <div class="submit">
-        <span class="submit__instruction">You can Save in Records and Upload later</span>
+        <span class="submit__instruction">You can SAVE in "History" and UPLOAD later</span>
         <button class="submit__save iconfont">&#xe614; SAVE</button>
         <button class="submit__upload iconfont">&#xe61c; UPLOAD</button>
     </div>

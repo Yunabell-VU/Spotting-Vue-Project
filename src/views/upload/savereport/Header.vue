@@ -1,20 +1,20 @@
 <template>
   <div class="headerWrapper">
     <div class="header">
-      <div class="header__logo">History</div>
+      <div class="header__logo">Saved</div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'RecHeader'
+  name: 'ReportHeader'
 }
 </script>
 
 <style lang="scss" scoped>
-@import "../../style/variables.scss";
-@import "../../style/mixins.scss";
+@import "../../../style/variables.scss";
+@import "../../../style/mixins.scss";
 .headerWrapper {
   position: fixed;
   z-index: 9999;
