@@ -5,12 +5,13 @@
       <div class="header__services">
         <div class="header__services__flag spain"></div>
         <div class="header__services__flag uk"></div>
-        <router-link :to='{name:"Contact"}'>
-          <div class="header__services__contact">
-            <div class="iconfont">&#xe63f;</div>
+        <div class="header__services__contact">
+          <div class="iconfont">&#xe63f;</div>
+          <router-link :to='{name:"Contact"}'>
             <div class="iconfont">&#xe637;</div>
-          </div>
-        </router-link>
+          </router-link>
+        </div>
+
       </div>
     </div>
   </div>
@@ -76,11 +77,7 @@ export default {
       .iconfont {
         margin-right: 20%;
         font-size: 0.25rem;
-        font-weight: bold;
         color: white;
-      }
-      .iconfont:nth-child(1){
-        font-weight: normal;
       }
     }
   }

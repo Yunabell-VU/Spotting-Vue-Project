@@ -10,7 +10,7 @@ export default {
 
 <style lang="scss" scoped>
     .navi-wrapper {
-        position: absolute;
+        position: fixed;
         top: 12%;
         left: 0;
         height: 7%;

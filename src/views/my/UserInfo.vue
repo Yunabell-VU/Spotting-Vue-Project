@@ -7,7 +7,7 @@
                     <use xlink:href="#icon-touxiang2"></use>
                 </svg>
             </div>
-            <span class="basic-info__username">Superrr</span>
+            <span class="basic-info__username">ADoge</span>
             <span class="iconfont basic-info__edit">&#xe608;</span>
         </div>
         <div class="points-info">
