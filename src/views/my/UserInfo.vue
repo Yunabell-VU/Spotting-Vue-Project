@@ -94,6 +94,7 @@ export default {
             }
             &__fish{
                 font-size: .3rem;
+                font-weight: bold;
                 color: $content-themeViceColor;
             }
         }

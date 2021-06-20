@@ -22,7 +22,7 @@ export default {
   setup () {
       const dockerList = [
           { icon: '&#xe604;', text: 'HOME' },
-          { icon: '&#xe698;', text: 'HISTORY' },
+          { icon: '&#xe63a;', text: 'HISTORY' },
           { icon: '&#xe600;', text: 'REPORT' },
           { icon: '&#xe601;', text: 'MALL' },
           { icon: '&#xe671;', text: 'MY' }

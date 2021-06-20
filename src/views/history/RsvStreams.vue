@@ -4,15 +4,12 @@
       <div class="streams__report"
         v-for="item in 2"
         :key="item.id">
-        <div class="streams__report__band">
-            <span>Processing</span>
-        </div>
         <div class="streams__report__content">
             <div class="streams__report__content__left">
                 <div class="streams__report__content__left__picbox">
                     <div class="streams__report__content__left__picbox__pic"></div>
                     <div class="streams__report__content__left__picbox__date">
-                        <span class="iconfont">&#xe653;14-6-2021</span>
+                        <span class="iconfont">&#xe653;15-6-2021</span>
                     </div>
                 </div>
             </div>
@@ -20,18 +17,20 @@
                 <div class="streams__report__content__right__loc">
                     <span class="streams__report__content__right__loc__title">Location : </span>
                     <div class="streams__report__content__right__loc__area">
-                        <span>E1</span>
+                        <span>E4</span>
                     </div>
                 </div>
-                <div class="streams__report__content__right__rsv">
-                    <span class="streams__report__content__right__rsv__title">Reserved By : </span>
-                    <div class="streams__report__content__right__rsv__profile">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-touxiang5"></use>
-                        </svg>
-                        <span class="streams__report__content__right__rsv__name">Light Tower </span>
-                    </div>
+                <div class="streams__report__content__right__btn">
+                    <button>Mark Cleaned</button>
                 </div>
+            </div>
+        </div>
+        <div class="streams__report__band">
+            <span class="streams__report__band__title">Reserved</span>
+            <div class="streams__report__band__icons">
+                <span class="iconfont">&#xe664;</span>
+                <span class="iconfont">&#xe65e;</span>
+                <span class="iconfont">&#xe63e;</span>
             </div>
         </div>
       </div>
@@ -41,7 +40,7 @@
 
 <script>
 export default {
-  name: 'RecStreams'
+  name: 'RsvStreams'
 }
 </script>
 
@@ -52,7 +51,7 @@ export default {
   overflow-y: auto; //scroll overflow control
   position: absolute;
   left: 0;
-  top: 20%;
+  top: .3rem;
   height: 80%;
   width: 100%;
   background-color: $content-bgColor;
@@ -61,33 +60,46 @@ export default {
   position: relative;
   display: flex;
   flex-direction: column;
-  left: 5%;
+  left: 2%;
   top: 0;
-  padding-bottom: 1.8rem;
-  width: 90%;
+  padding-top: .15rem;
+  width: 94%;
   height: 100%;
   &__report {
     display: flex;
     flex-direction: column;
-    height: 35%;
+    height: 40%;
     width: 100%;
     margin: 0.15rem 0 0.01rem 0;
     background-color: white;
-    border-radius: 0.1rem;
+    border-radius: 0.05rem;
     box-shadow: 0.01rem 0.02rem 0.1rem 0.01rem rgba(0, 0, 0, 0.2);
     &__band {
         width: 100%;
-        height: 13%;
-        background-color: rgb(38, 131, 238);
-        border-radius: .1rem .1rem 0 0;
-        text-align: left;
+        height: 18%;
+        background-color: rgb(240, 170, 58);
+        border-radius: 0 0 .05rem .05rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         span {
             display: inline-block;
             padding-left: 3%;
             padding-top: 1%;
-            font-size: .15rem;
+            font-size: .16rem;
             color: white;
+        }
+        &__title {
             font-weight: bold;
+        }
+        &__icons {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 5%;
+            width: 35%;
+            .iconfont {
+                font-size: .25rem;
+            }
         }
     }
     &__content {
@@ -106,7 +118,7 @@ export default {
             border: 1px solid #777;
             &__pic {
                 height: 1rem;
-                background-image: url("https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60cdef7d4ca18b297455d3e0/6db197358383db90a4a0a5b07d773a6b/%E6%B5%B7%E6%BB%A9%E5%9E%83%E5%9C%BE3.jpeg");
+                background-image: url("https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60cdef7d4ca18b297455d3e0/6a767f864a432b3ed1762d8ec243d0a3/%E6%B5%B7%E6%BB%A9%E5%9E%83%E5%9C%BE1.jpg");
                 background-size: cover;
             }
             &__date {
@@ -116,7 +128,7 @@ export default {
                 @include flexCenter;
                 font-size: .2rem;
                 font-weight: bold;
-                color: rgb(38, 131, 238);
+                color: rgb(240, 170, 58);
                 .iconfont {
                     font-size: .21rem;
                 }
@@ -124,6 +136,8 @@ export default {
         }
     }
     &__right {
+        display: flex;
+        flex-direction: column;
         width: 55%;
         height: 100%;
         &__loc {
@@ -147,29 +161,21 @@ export default {
                 }
             }
         }
-        &__rsv {
+        &__btn {
             box-sizing: border-box;
             width: 100%;
-            height: 55%;
-            padding-top: 5%;
-            &__title {
-                color: $content-themeViceColor;
-                font-size: .15rem;
-            }
-            &__profile {
-                margin-top: 2%;
-                margin-left: 8%;
-                width: 2rem;
-                height: .5rem;
-                svg {
-                    font-size: .45rem;
-                }
-                span {
-                    font-size: .14rem;
-                    font-weight: bold;
-                    color: $content-fontcolor;
-                    margin-left: 5%;
-                }
+            height: 35%;
+            padding-top: 10%;
+            padding-left: 5%;
+            button {
+              border: none;
+              width: 1.5rem;
+              height: .4rem;
+              background-color: rgb(240, 170, 58);
+              color: white;
+              font-size: .18rem;
+              font-weight: bold;
+              border-radius: .04rem;
             }
         }
     }

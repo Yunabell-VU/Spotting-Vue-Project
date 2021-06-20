@@ -24,12 +24,12 @@
               <span class="streams__report__left__distance__text">{{item.distance}}</span>
             </div>
             <div class="streams__report__left__mark">
-              <span class="streams__report__left__mark__title">Reported by : </span>
               <div class="streams__report__left__mark__profile">
                 <svg class="icon" aria-hidden="true">
                   <use :xlink:href="'#' + item.profile"></use>
                 </svg>
               </div>
+              <span class="streams__report__left__mark__title">{{item.time}} ago </span>
             </div>
           </div>
           <div class="streams__report__right">
@@ -60,36 +60,42 @@ export default {
       profile: 'icon-touxiang2',
       pollute: 2,
       distance: '100 m',
+      time: '2 mins',
       tags: ['&#xe602;', '&#xe607', '&#xe641;']
     }, {
       id: 2,
       profile: 'icon-peitubiaotouxiang-1-copy-copy',
       pollute: 1,
       distance: '253 m',
+      time: '2 days',
       tags: ['&#xe602;', '&#xe607']
     }, {
       id: 3,
       profile: 'icon-touxiang',
       pollute: 3,
       distance: '1 km',
+      time: '3 hrs',
       tags: ['&#xe641;']
     }, {
       id: 4,
       profile: 'icon-fish',
       pollute: 2,
       distance: '1.5 km',
+      time: '4 days',
       tags: ['&#xe607']
     }, {
       id: 5,
       profile: 'icon-touxiang3',
       pollute: 4,
       distance: '2 km',
+      time: '50 mins',
       tags: ['&#xe641;']
     }, {
       id: 6,
       profile: 'icon-touxiang4',
       pollute: 3,
       distance: '2.5 km',
+      time: '30 mins',
       tags: ['&#xe602;', '&#xe607', '&#xe641;']
     }]
     return { streamList }
@@ -172,21 +178,24 @@ export default {
         height: .3rem;
         color: $content-fontcolor;
         font-size: .15rem;
-        padding-top: 3%;
+        padding-top: 5%;
         &__title {
           color: $content-themeViceColor;
         }
       }
       &__mark {
+        display: flex;
+        align-items:flex-end;
+        justify-content: space-between;
         padding-top: 2%;
         width: 60%;
         height: .6rem;
-        &__title {
-          color: $content-themeViceColor;
-          font-size: .15rem;
-        }
         &__profile {
           font-size: .4rem;
+        }
+        &__title {
+          color: $content-fontcolor;
+          font-size: .13rem;
         }
       }
     }
