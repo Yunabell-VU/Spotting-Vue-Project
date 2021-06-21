@@ -2,7 +2,6 @@
     <div class="user-wrapper">
         <div class="basic-info">
             <div class="basic-info__profile">
-                <!-- <span class="iconfont">&#xe6bb;</span> -->
                 <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-touxiang2"></use>
                 </svg>
@@ -17,7 +16,7 @@
             <div class="points-info__right">
                 <span class="points-info__right__number">11</span>
                 <router-link :to='{name: "MALL"}'>
-                    <span class= "iconfont points-info__right__fish">&#xefd7;</span>
+                    <span class= "iconfont points-info__right__fish">&#xe67a;</span>
                 </router-link>
             </div>
         </div>

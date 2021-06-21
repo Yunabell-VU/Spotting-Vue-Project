@@ -11,7 +11,9 @@
             </div>
         </div>
         <div class="loc-wrapper__right">
-            <div class="map"></div>
+            <router-link :to='{name:"Map"}'>
+                <div class="map"></div>
+            </router-link>
         </div>
     </div>
 </template>
@@ -80,8 +82,8 @@ export default {
         }
     }
     .map {
-        width: 90%;
-        height: 92%;
+        width: 1.2rem;
+        height: 1.3rem;
         background-image: url('https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60cc834215a71802de298567/f82d3ab36b76496afa4480429bb5b4d2/FULL_map.png');
         background-size: cover;
     }

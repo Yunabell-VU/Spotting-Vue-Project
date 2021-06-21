@@ -7,7 +7,7 @@
         <div class="streams__report__top">
           <div class="streams__report__pollute">
             <div class="streams__report__pollute__band"></div>
-            <span class="streams__report__pollute__title">Pollute Level :</span>
+            <span class="streams__report__pollute__title">Trash Concentration :</span>
             <div class="streams__report__pollute__level">
               <span class="iconfont"
               v-for="(item, index) in 5"

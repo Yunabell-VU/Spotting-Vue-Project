@@ -77,7 +77,7 @@ export default {
     &__band {
         width: 100%;
         height: 18%;
-        background-color: rgb(240, 170, 58);
+        background-color: rgb(145, 87, 221);
         border-radius: 0 0 .05rem .05rem;
         display: flex;
         align-items: center;
@@ -128,9 +128,9 @@ export default {
                 @include flexCenter;
                 font-size: .2rem;
                 font-weight: bold;
-                color: rgb(240, 170, 58);
+                color: rgb(145, 87, 221);
                 .iconfont {
-                    font-size: .21rem;
+                    font-size: .18rem;
                 }
             }
         }
@@ -171,7 +171,7 @@ export default {
               border: none;
               width: 1.5rem;
               height: .4rem;
-              background-color: rgb(240, 170, 58);
+              background-color: rgb(145, 87, 221);
               color: white;
               font-size: .18rem;
               font-weight: bold;

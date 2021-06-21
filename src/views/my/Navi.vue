@@ -16,9 +16,9 @@ export default {
   name: 'Navi',
   setup () {
     const naviList = [
-          { name: 'My Footprint', destination: '' },
           { name: 'My Wallet', destination: 'Wallet' },
-          { name: 'About Spotting', destination: 'AboutUs' }
+          { name: 'About Spotting', destination: 'AboutUs' },
+          { name: 'Settings', destination: '' }
       ]
     const router = useRouter()
     const handleNavigation = (destination) => {
@@ -40,13 +40,15 @@ export default {
         width: 100%;
     }
     .navi {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         height: 20%;
         width: 100%;
         margin-bottom: 10%;
         box-shadow: 0.01rem 0.02rem 0.1rem 0.01rem rgba(0, 0, 0, 0.2);
         color: $content-themeViceColor;
         font-weight: bold;
-        @include flexLeftCenter;
         &__name {
             font-size: .17rem;
             margin-left: 5%;

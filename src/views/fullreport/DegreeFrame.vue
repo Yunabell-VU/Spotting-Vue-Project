@@ -1,6 +1,6 @@
 <template>
     <div class='degree-wrapper'>
-        <span class='frame-text'>SCALE OF POLLUTION</span>
+        <span class='frame-text'>SCALE OF TRASH CONCENTRATION</span>
         <div class="input-area">
             <span class="iconfont input-area__level"
                 v-for="(item, index) in 5"

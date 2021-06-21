@@ -12,7 +12,7 @@
             </div>
             <div class="coupon__info">{{item.text}}</div>
             <div class="coupon__points">
-                <span class="iconfont">&#xefd7;</span>
+                <span class="iconfont">&#xe67a;</span>
                 <span class="coupon__points__text">{{item.points}} Points</span>
             </div>
             <div class="coupon__btn">

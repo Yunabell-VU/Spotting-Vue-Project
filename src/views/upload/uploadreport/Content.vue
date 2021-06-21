@@ -4,7 +4,7 @@
     <div class="info">
         <span class="info__title">You Get 1 Point !</span>
         <div class="info__fish">
-            <span class="iconfont">&#xefd7;</span>
+            <span class="iconfont">&#xe67a;</span>
         </div>
         <span class="info__instruction">Go to "History" to check your uploaded reports</span>
     </div>

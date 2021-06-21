@@ -58,6 +58,10 @@ const routes = [
     path: '/report/saved/sample1',
     name: 'SavedRep',
     component: () => import('../views/upload/savereport/SavedRep')
+  }, {
+    path: '/map',
+    name: 'Map',
+    component: () => import('../components/Map.vue')
   }
 ]
 

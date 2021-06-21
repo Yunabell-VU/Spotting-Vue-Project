@@ -1,7 +1,9 @@
 <template>
     <div class="user">
         <div class="user__profile">
-            <span class="iconfont">&#xe6bb;</span>
+            <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-touxiang2"></use>
+            </svg>
         </div>
         <div class="user__info">
             <span class="user__info__text">Available Items</span>
@@ -39,7 +41,7 @@ export default {
             height: 100%;
             width: 20%;
             @include flexCenter;
-            .iconfont {
+            svg {
                 font-size: .6rem;
                 color: $content-themeColor;
             }

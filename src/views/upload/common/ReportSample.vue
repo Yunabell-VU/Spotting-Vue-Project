@@ -9,7 +9,7 @@
             <span class="content__loc-and-pollut__loc__area">E3</span>
         </div>
         <div class="content__loc-and-pollut__pollut">
-            <span class="content__loc-and-pollut__pollut__title">Pollution Degree</span>
+            <span class="content__loc-and-pollut__pollut__title">Trash Concentration</span>
             <span class="iconfont icontent__loc-and-pollut__pollut__level"
             v-for="(item, index) in 5"
             :key="index"
@@ -79,6 +79,7 @@ export default {
                 height: 100%;
                 width: 50%;
                 &__title {
+                    text-align: center;
                     display: inline-block;
                     margin-top: 1.5%;
                     width: 100%;

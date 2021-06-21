@@ -135,7 +135,7 @@ export default {
                 font-weight: bold;
                 color: rgb(46, 185, 209);
                 .iconfont {
-                    font-size: .21rem;
+                    font-size: .18rem;
                 }
             }
         }
