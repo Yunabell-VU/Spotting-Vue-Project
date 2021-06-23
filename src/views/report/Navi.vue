@@ -1,4 +1,5 @@
 <template>
+<!-- Navigation in Report, go to Full report, Voice report, Help -->
     <div class="wrapper">
         <div class="navis">
             <div class="navi"
@@ -10,13 +11,14 @@
                 <span class="iconfont navi__arrow">&#xe692;</span>
             </div>
         </div>
-        <div class="help">
+        <router-link :to='{name: "ReportHelp"}'>
+            <div class="help">
             <div class="help__box">
-                <span class="iconfont">&#xe62e;</span>
-                <!-- <span class="iconfont">&#xe621;</span> -->
-            </div>
-            <span class="help__text">Help</span>
+                    <span class="iconfont">&#xe62e;</span>
+                </div>
+                <span class="help__text">Help</span>
         </div>
+        </router-link>
     </div>
 </template>
 
@@ -111,6 +113,7 @@ export default {
             height: .2rem;
             font-size: .15rem;
             text-align: center;
+            color: $content-fontcolor;
         }
     }
 </style>

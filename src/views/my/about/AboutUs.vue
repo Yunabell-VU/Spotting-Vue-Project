@@ -1,4 +1,5 @@
 <template>
+<!-- About US Page -->
     <Header content="About Us"/>
     <div class="content">
       <div class="content__intro">

@@ -1,4 +1,5 @@
 <template>
+<!-- My function -->
     <Header content="User"/>
     <UserInfo />
     <Navi />

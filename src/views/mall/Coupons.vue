@@ -1,4 +1,5 @@
 <template>
+<!-- Coupons Section in Mall -->
     <div class="wrapper">
         <div class="banner">
             <span>Coupons</span>
@@ -6,7 +7,7 @@
         <div class="coupon"
         v-for="(item, index) in couponList"
         :key="index">
-            <div class="coupon__image"
+            <div class="coupon__image" :title="item.text"
             :style='{"background-image":"url("+item.image+")"}'>
             <span class="coupon__image__notice">{{item.notice}}</span>
             </div>
@@ -16,34 +17,50 @@
                 <span class="coupon__points__text">{{item.points}} Points</span>
             </div>
             <div class="coupon__btn">
-                <button class="coupon__btn__submit">Redeem</button>
+                <button class="coupon__btn__submit"
+                @click="show"
+                >Redeem</button>
             </div>
         </div>
     </div>
+    <Confirm ref="MSGCONFIRMPRO"></Confirm>
 </template>
 
 <script>
+import Confirm from '../../components/Confirm.vue'
 export default {
   name: 'UserInfo',
+  components: { Confirm },
+  methods: {
+    show () {
+      this.$refs.MSGCONFIRMPRO.show('Redeem this coupon?',
+      () => {
+        // confirmed
+        },
+      () => {
+        // canceled
+          })
+    }
+  },
   setup () {
       const couponList = [
           {
-            image: 'https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60c9ea5409770e6a13fe63c5/52809848a147b77309701725569cc01b/surf_kit.jpg',
+            image: 'https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60c9ea5409770e6a13fe63c5/636965dbeae945a5a36ff5cbe908c0ba/surf_kit.jpg',
             notice: 'Surf Kit 5% Off',
             text: 'Surf Kit 5% off',
             points: '10'
           }, {
-            image: 'https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60c9ea5409770e6a13fe63c5/52809848a147b77309701725569cc01b/surf_kit.jpg',
+            image: 'https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60c9ea5409770e6a13fe63c5/636965dbeae945a5a36ff5cbe908c0ba/surf_kit.jpg',
             notice: 'Surf Kit 10% Off',
             text: 'Surf Kit 10% off',
             points: '25'
           }, {
-            image: 'https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60c9ea5409770e6a13fe63c5/d2073d9f3c5abd3833db191a3075ff0b/surf_lesson.jpg',
+            image: 'https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60c9ea5409770e6a13fe63c5/da1f095ee49668bc46660fcb7f90ccdf/surf_lesson.jpg',
             notice: 'Free Surf Lesson',
             text: 'Free Surf Lesson',
             points: '100'
           }, {
-            image: 'https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60c9ea5409770e6a13fe63c5/d29c7c2ffb7fc64804da20c4ec15deef/drink.jpg',
+            image: 'https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60c9ea5409770e6a13fe63c5/114a249261d5dcf983c417c3b3dacc21/drink.jpg',
             notice: 'Drink 10% Off',
             text: 'Bar Drink 10% Off',
             points: '20'

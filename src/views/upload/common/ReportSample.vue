@@ -1,7 +1,8 @@
 <template>
+<!-- An example of report content -->
 <div class="content">
     <div class="content__photos">
-        <div class="content__photos__image"></div>
+        <div class="content__photos__image" title="Photo"></div>
     </div>
     <div class="content__loc-and-pollut">
         <div class="content__loc-and-pollut__loc">

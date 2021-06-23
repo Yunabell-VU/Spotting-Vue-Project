@@ -1,4 +1,5 @@
 <template>
+<!-- Go to History Button -->
 <div class="submit">
     <router-link :to='{name:"HISTORY"}'>
         <button class="iconfont">&#xe63a; History</button>

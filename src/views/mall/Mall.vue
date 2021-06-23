@@ -1,4 +1,5 @@
 <template>
+<!-- Mall function -->
     <Header content="Mall" />
     <UserInfo />
     <Coupons />

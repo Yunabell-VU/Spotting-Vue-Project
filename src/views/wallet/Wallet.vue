@@ -1,4 +1,5 @@
 <template>
+<!-- Wallet function -->
     <Header content="My Wallet"/>
     <UserInfo />
     <Coupons />

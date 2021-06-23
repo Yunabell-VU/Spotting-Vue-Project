@@ -1,4 +1,5 @@
 <template>
+<!-- Docker component for every page at the bottom -->
   <div class="docker">
     <div
         v-for="(item, index) in dockerList"

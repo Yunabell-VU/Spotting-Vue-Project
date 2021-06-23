@@ -1,4 +1,5 @@
 <template>
+<!-- Description input Component -->
     <div class='desc-wrapper'>
         <span class='frame-text'>DESCRIPTION</span>
         <div class="input-area">
@@ -6,7 +7,7 @@
                 <input type="text" placeholder="Enter text or record your description">
             </div>
             <div class="input-area__voice">
-                <span class="iconfont input-area__voice__mac">&#xe66e;</span>
+                <span class="iconfont input-area__voice__mac" title="Voice Record Button">&#xe66e;</span>
                 <span class="iconfont input-area__voice__arrow">&#xe631;</span>
                 <span class="input-area__voice__instruction">Keep pressing to record</span>
             </div>

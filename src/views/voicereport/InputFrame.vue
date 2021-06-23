@@ -1,12 +1,13 @@
 <template>
+<!-- Voice input Component -->
     <div class='wrapper'>
         <div class="voicebar">
             <div class="voicebar__progress"></div>
             <div class="voicebar__remain"></div>
         </div>
         <div class="buttons">
-            <span class="iconfont buttons__play">&#xe620;</span>
-            <span class="iconfont buttons__record">&#xe805;</span>
+            <span class="iconfont buttons__play" title="Play Button">&#xe620;</span>
+            <span class="iconfont buttons__record" title="Voice Record Button">&#xe805;</span>
         </div>
     </div>
 </template>

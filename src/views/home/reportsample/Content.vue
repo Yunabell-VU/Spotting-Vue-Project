@@ -1,8 +1,9 @@
 <template>
+<!-- Reported Contents -->
   <div class="content-wrapper">
     <div class="content">
       <div class="content__photos">
-        <div class="content__photos__image"></div>
+        <div class="content__photos__image" title="Uploaded Photo"></div>
       </div>
       <div class="content__loc-and-pollut">
         <div class="content__loc-and-pollut__loc">
@@ -27,7 +28,7 @@
       </div>
       <div class="content__desc">
         <div class="content__title content__desc__title">Description</div>
-        <div class="content__desc__text">
+        <div class="content__desc__text" title="Voice Message">
             <span class="iconfont">&#xe675;</span>
         </div>
       </div>
@@ -44,7 +45,7 @@
   </div>
   <div class="submit">
       <div class="submit__rsv">
-          <span class="submit__instr">On the way to clean up</span>
+          <span class="submit__instr">save into "History"</span>
           <button class="iconfont submit__btn">&#xe652; Reserve</button>
       </div>
       <div class="submit__cld">
@@ -52,6 +53,7 @@
           <button class="iconfont submit__btn">&#xe64d; Complete</button>
       </div>
   </div>
+  <div class="notice">Reserve a report will remove it from the home page !</div>
 </template>
 
 <script>
@@ -212,5 +214,16 @@ export default {
       justify-content: space-between;
       width: 50%;
   }
+}
+.notice {
+  position: absolute;
+  left: 3%;
+  bottom: 9%;
+  width: 94%;
+  height: .3rem;
+  text-align: right;
+  color: $content-themeViceColor;
+  font-size: .13rem;
+  font-weight: bold;
 }
 </style>

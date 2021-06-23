@@ -1,4 +1,5 @@
 <template>
+<!-- Contact Page -->
     <Header content="Contact" />
     <div class="content">
       <div class="content__address">

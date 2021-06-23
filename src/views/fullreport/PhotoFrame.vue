@@ -1,4 +1,5 @@
 <template>
+<!-- Photo input Component -->
     <div class='photo-wrapper'>
         <span class='frame-text'>CHOOSE PHOTOS TO UPLOAD</span>
         <div class="photos">

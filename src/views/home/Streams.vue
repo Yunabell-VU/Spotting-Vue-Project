@@ -1,4 +1,5 @@
 <template>
+<!-- Reports Streams -->
   <div class="streamWrapper">
     <div class="streams">
       <div class="streams__report"
@@ -213,7 +214,7 @@ export default {
           border: none;
           border-radius: 0.04rem;
           color: white;
-          font-size: 0.12rem;
+          font-size: 0.15rem;
         }
       }
       &__tags {

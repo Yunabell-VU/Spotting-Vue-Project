@@ -1,4 +1,5 @@
 <template>
+<!-- Navigations to wallet, about us and settings -->
     <div class="navi-wrapper">
         <div class="navi"
         v-for="(item, index) in naviList"

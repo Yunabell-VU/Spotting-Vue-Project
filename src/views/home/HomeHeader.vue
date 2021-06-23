@@ -1,16 +1,17 @@
 <template>
+<!-- Header of Home, include Logo, Language, Help, Contact -->
   <div class="headerWrapper">
     <div class="header">
       <div class="header__logo">SPOTTING</div>
       <div class="header__services">
-        <div class="header__services__flag spain"></div>
-        <div class="header__services__flag uk"></div>
+        <div class="header__services__flag spain" title="Spanish"></div>
+        <div class="header__services__flag uk" title="English"></div>
         <div class="header__services__contact">
           <div class="iconfont"
-          @click= "handleHelpClick"
+          @click= "handleHelpClick" title="Help"
           >&#xe63f;</div>
           <router-link :to='{name:"Contact"}'>
-            <div class="iconfont">&#xe637;</div>
+            <div class="iconfont" title="Contact">&#xe637;</div>
           </router-link>
         </div>
       </div>
@@ -21,25 +22,41 @@
     v-show="show"
     @click= "handleHelpClick">
     <div class="help-mask__top">
-      <div class="help-mask__top__arrows">
+      <div class="help-mask__top__arrows help-mask__arrows">
         <span class="iconfont">&#xe67d;</span>
         <span class="iconfont">&#xe67d;</span>
       </div>
-      <div class="help-mask__top__text">
+      <div class="help-mask__top__text help-mask__text">
         <span>Switch between languages</span>
         <span>Need help? Contact us!</span>
       </div>
     </div>
     <div class="help-mask__med"></div>
     <div class="help-mask__btm">
-      <div class="help-mask__btm__high"></div>
-      <div class="help-mask__btm__mid"></div>
+      <div class="help-mask__btm__high">
+        <div class="help-mask__btm__high__text help-mask__text">
+          <span>Report discovered rubbish</span>
+        </div>
+        <div class="help-mask__btm__high__arrows help-mask__arrows">
+          <span class="iconfont">&#xe67c;</span>
+        </div>
+      </div>
+      <div class="help-mask__btm__mid">
+        <div class="help-mask__btm__mid__text help-mask__text">
+          <span>Your reports history</span>
+          <span>Exchange points</span>
+        </div>
+        <div class="help-mask__btm__mid__arrows help-mask__arrows">
+          <span class="iconfont">&#xe67c;</span>
+          <span class="iconfont">&#xe67c;</span>
+        </div>
+      </div>
       <div class="help-mask__btm__low">
-        <div class="help-mask__btm__low__text">
-          <span>Home Page</span>
+        <div class="help-mask__btm__low__text help-mask__text">
+          <span>Trash Spots</span>
           <span>Your Account</span>
         </div>
-        <div class="help-mask__btm__low__arrows">
+        <div class="help-mask__btm__low__arrows help-mask__arrows">
           <span class="iconfont">&#xe67c;</span>
           <span class="iconfont">&#xe67c;</span>
         </div>
@@ -135,24 +152,7 @@ export default {
   height: 88%;
   color:white;
   background-color: rgba(26, 24, 24, 0.698);
-  &__top {
-    display: flex;
-    flex-direction: column;
-    width: 98%;
-    height: 20%;
-    &__arrows {
-      display: flex;
-      justify-content: space-between;
-      height: 40%;
-      span {
-        width: .2rem;
-        margin-left:.2rem;
-        margin-right: .3rem;
-        font-size: .4rem;
-        // font-weight: bold;
-      }
-    }
-    &__text {
+  &__text {
       display: flex;
       justify-content: space-between;
       height: 50%;
@@ -165,11 +165,28 @@ export default {
         font-size: .15rem;
       }
     }
+  &__arrows {
+      display: flex;
+      justify-content: space-between;
+      height: 40%;
+      span {
+        width: .2rem;
+        margin-left:.2rem;
+        margin-right: .3rem;
+        font-size: .4rem;
+        // font-weight: bold;
+      }
+    }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 20%;
   }
   &__med {
     width: 98%;
     height:30%;
-    background-color: burlywood;
+    // background-color: burlywood;
   }
   &__btm {
     position: relative;
@@ -177,27 +194,57 @@ export default {
     height: 42%;
     &__high {
       position: absolute;
-      top:0;
-      left: 0;
-      width: 100%;
+      top:15%;
+      left: 38%;
+      width: 35%;
       height: 100%;
-      background-color: chocolate;
+      &__text {
+        height:30%;
+        transform:translateX(-10%);
+      }
+      &__arrows {
+        height:70%;
+        .iconfont {
+          display: inline-block;
+          font-size: .7rem;
+          transform: scale(1,1.8) translate(50%, 20%);
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
     }
     &__mid {
       position: absolute;
-      top:30%;
-      left: 0;
-      width: 100%;
-      height: 70%;
-      background-color: cornflowerblue;
+      top:50%;
+      left: 20%;
+      width: 65%;
+      height: 50%;
+      &__text {
+        height: 31%;
+        span {
+          width: 1rem;
+        }
+      }
+      &__arrows {
+        height: 70%;
+        width: 78%;
+        .iconfont {
+          margin-left: 0;
+          font-size: .8rem;
+        }
+      }
     }
     &__low {
       position: absolute;
-      top:50%;
+      top:67%;
       left: 0;
       width: 100%;
-      height: 50%;
-      background-color: darkcyan;
+      height: 30%;
+      &__text {
+        span {
+          width: 1rem;
+        }
+      }
     }
   }
 }

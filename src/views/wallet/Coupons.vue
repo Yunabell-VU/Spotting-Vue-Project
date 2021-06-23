@@ -1,4 +1,5 @@
 <template>
+<!-- Coupons section in Wallet -->
     <div class="wrapper">
         <div class="banner">
             <span>Available Items</span>
@@ -6,26 +7,41 @@
         <div class="coupon"
         v-for="(item, index) in couponList"
         :key="index">
-            <div class="coupon__image"
+            <div class="coupon__image" :title="item.text"
             :style='{"background-image":"url("+item.image+")"}'>
-            <!-- <span class="coupon__image__notice">{{item.notice}}</span> -->
             </div>
             <div class="coupon__info">{{item.text}}</div>
             <div class="coupon__points"></div>
             <div class="coupon__btn">
-                <button class="coupon__btn__submit">USE</button>
+                <button class="coupon__btn__submit"
+                @click="show"
+                >USE</button>
             </div>
         </div>
     </div>
+    <Confirm ref="MSGCONFIRMPRO"></Confirm>
 </template>
 
 <script>
+import Confirm from '../../components/Confirm.vue'
 export default {
   name: 'UserInfo',
+  components: { Confirm },
+  methods: {
+    show () {
+      this.$refs.MSGCONFIRMPRO.show('Use this coupon?',
+      () => {
+        // confirmed
+        },
+      () => {
+        // canceled
+          })
+    }
+  },
   setup () {
       const couponList = [
           {
-            image: 'https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60c9ea5409770e6a13fe63c5/52809848a147b77309701725569cc01b/surf_kit.jpg',
+            image: 'https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60c9ea5409770e6a13fe63c5/636965dbeae945a5a36ff5cbe908c0ba/surf_kit.jpg',
             notice: 'Surf Kit 5% Off',
             text: 'Surf Kit 5% off'
           }]

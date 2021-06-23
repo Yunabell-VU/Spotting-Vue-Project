@@ -1,25 +1,26 @@
 <template>
+<!-- Navigation bar on top -->
     <div class="navi-wrapper">
         <div class="navi">
             <div class="navi__btn"
             @click="show(1)"
             :class="index===1? 'navi__btn--active':''">
-            <span class="iconfont">&#xeae5;</span>
+            <span class="iconfont" title="Processing">&#xeae5;</span>
             </div>
             <div class="navi__btn"
             @click="show(2)"
             :class="index===2? 'navi__btn--active':''">
-            <span class="iconfont">&#xe652;</span>
+            <span class="iconfont" title="Reserved">&#xe652;</span>
             </div>
             <div class="navi__btn"
             @click="show(3)"
             :class="index===3? 'navi__btn--active':''">
-            <span class="iconfont">&#xe64b;</span>
+            <span class="iconfont" title="Cleaned">&#xe64b;</span>
             </div>
             <div class="navi__btn"
             @click="show(4)"
             :class="index===4? 'navi__btn--active':''">
-            <span class="iconfont">&#xe648;</span>
+            <span class="iconfont" title="Saved">&#xe648;</span>
             </div>
         </div>
         <div class="navi-content">

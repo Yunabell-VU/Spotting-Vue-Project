@@ -1,4 +1,5 @@
 <template>
+<!-- Report Function -->
     <Header content="Report"/>
     <Navi />
     <Docker :content="idx"/>

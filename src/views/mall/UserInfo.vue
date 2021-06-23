@@ -1,4 +1,5 @@
 <template>
+<!-- User information in Mall  -->
     <div class="user">
         <div class="user__profile">
             <svg class="icon" aria-hidden="true">

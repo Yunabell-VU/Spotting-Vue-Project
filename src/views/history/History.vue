@@ -1,4 +1,5 @@
 <template>
+<!-- History Function -->
     <Header content = "History"/>
     <Navi />
     <Docker :content="idx"/>

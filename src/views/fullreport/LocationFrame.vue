@@ -1,4 +1,5 @@
 <template>
+<!-- Location input Component -->
     <div class='loc-wrapper'>
         <div class="loc-wrapper__left">
             <span class='frame-text'>YOUR LOCATION</span>
@@ -12,7 +13,7 @@
         </div>
         <div class="loc-wrapper__right">
             <router-link :to='{name:"Map"}'>
-                <div class="map"></div>
+                <div class="map" title="Map"></div>
             </router-link>
         </div>
     </div>
@@ -84,7 +85,7 @@ export default {
     .map {
         width: 1.2rem;
         height: 1.3rem;
-        background-image: url('https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60cc834215a71802de298567/f82d3ab36b76496afa4480429bb5b4d2/FULL_map.png');
+        background-image: url('https://trello-attachments.s3.amazonaws.com/60ba1bb04709e232d53f03ce/60cc834215a71802de298567/6fbb6ec399c9e6772a16869135371ce6/Full_map.png');
         background-size: cover;
     }
 </style>

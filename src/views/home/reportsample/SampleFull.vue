@@ -1,4 +1,5 @@
 <template>
+<!-- Example of a report -->
     <Header content="Reports"/>
     <Content />
     <Docker :content="idx"/>

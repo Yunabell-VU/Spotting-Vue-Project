@@ -1,4 +1,5 @@
 <template>
+<!-- User information in My -->
     <div class="user-wrapper">
         <div class="basic-info">
             <div class="basic-info__profile">

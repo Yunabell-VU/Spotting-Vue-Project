@@ -1,4 +1,5 @@
 <template>
+<!-- Home Page -->
   <HomeHeader />
   <Streams />
   <Docker :content="idx" />

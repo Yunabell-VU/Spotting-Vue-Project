@@ -1,4 +1,5 @@
 <template>
+<!-- Header component for every page except the Home Page -->
   <div class="headerWrapper">
     <div class="header">
       <div class="header__logo">{{content}}</div>

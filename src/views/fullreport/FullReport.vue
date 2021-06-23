@@ -1,4 +1,5 @@
 <template>
+<!-- Full Report (with all methods) -->
     <Header content="Upload" />
     <div class="outer-wrapper">
         <PhotoFrame />
