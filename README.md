@@ -28,7 +28,7 @@ Spotting is a mobile application that aims to help the locals and tourists in Lo
 
    `(Figure: Home Page (left), History Page (right))`
 
-   ![image-20210827133454443](http://yunabell-image-repository.oss-cn-shanghai.aliyuncs.com/img/image-20210827133454443.png)
+   ![demo0](https://github.com/Yunabell-VU/Spotting-Vue-Project/blob/main/demo/main_history.png)
 
    3. **History**
 
@@ -59,25 +59,25 @@ Spotting is a mobile application that aims to help the locals and tourists in Lo
 
    (The theme color is later on adjusted due hinge on the Color Test)
 
-   ![image-20210827134545954](http://yunabell-image-repository.oss-cn-shanghai.aliyuncs.com/img/image-20210827134545954.png)
+   ![demo1](https://github.com/Yunabell-VU/Spotting-Vue-Project/blob/main/demo/demo1.png)
 
    
 
-   ![image-20210827134601568](http://yunabell-image-repository.oss-cn-shanghai.aliyuncs.com/img/image-20210827134601568.png)
+   ![demo2](https://github.com/Yunabell-VU/Spotting-Vue-Project/blob/main/demo/demo2.png)
 
    
 
-   ![image-20210827134616278](http://yunabell-image-repository.oss-cn-shanghai.aliyuncs.com/img/image-20210827134616278.png)
+   ![demo3](https://github.com/Yunabell-VU/Spotting-Vue-Project/blob/main/demo/demo3.png)
 
    
 
-   ![image-20210827134650609](http://yunabell-image-repository.oss-cn-shanghai.aliyuncs.com/img/image-20210827134650609.png)
+   ![demo4](https://github.com/Yunabell-VU/Spotting-Vue-Project/blob/main/demo/demo4.png)
 
    #### Structure
 
    The following image illustrates the structure of all functions of the app and their interactions.
 
-   ![img](http://yunabell-image-repository.oss-cn-shanghai.aliyuncs.com/img/60d517e607912920c80822a1.png)
+   ![str](https://github.com/Yunabell-VU/Spotting-Vue-Project/blob/main/demo/structure.png)
 
    
 
@@ -85,7 +85,7 @@ Spotting is a mobile application that aims to help the locals and tourists in Lo
 
 #### Group workflow
 
-![image-20210827134014580](http://yunabell-image-repository.oss-cn-shanghai.aliyuncs.com/img/image-20210827134014580.png)
+![workflow](https://github.com/Yunabell-VU/Spotting-Vue-Project/blob/main/demo/workflow.png)
 
 #### Assessment of Role
 
