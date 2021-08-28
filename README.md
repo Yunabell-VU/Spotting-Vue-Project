@@ -57,7 +57,7 @@ Spotting is a mobile application that aims to help the locals and tourists in Lo
 
    This following pics shows the implementation based on Vue.js.
 
-   (The theme color is later on adjusted due hinge on the Color Test)
+   (The theme color is later on adjusted hinge on the Color Test)
 
    ![demo1](https://github.com/Yunabell-VU/Spotting-Vue-Project/blob/main/demo/demo1.png)
 
