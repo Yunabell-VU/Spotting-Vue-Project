@@ -98,5 +98,26 @@ Spotting is a mobile application that aims to help the locals and tourists in Lo
 -  prepared the materials needed for the demonstration
 
 
+****
 
+# How to run
+
+### Prerequisite
+To run this project, make sure you have installed Node.js (at least ver 12).
+`node_modules` are not included, please follow the instructions to install all the modules needed.
+
+### Project setup
+Under the directory of this project, run the following command.
+
+```shell
+npm install
+```
+
+### Compile and open the server
+After `node_modules` are installed, run the following command to activate the project.
+
+```shell
+npm run serve
+```
+Check the web in http://localhost:8080 in mobile version. (iPhone 6)
 
